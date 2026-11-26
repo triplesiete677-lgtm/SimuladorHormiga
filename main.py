@@ -1,3 +1,4 @@
+#Marcos Altamirano
 
 import math
 import pygame
@@ -9,10 +10,8 @@ from simulation import update, NEST
 from parallel import update_parallel, CPU_CORES, WORKERS
 from rendering import draw_world
 
-
 WIDTH = 1000
 HEIGHT = 700
-
 
 def create_initial_state(amount):
     """Crea una colonia inicial de hormigas."""
@@ -28,7 +27,6 @@ def create_initial_state(amount):
     )
 
     return GameState(ants=ants)
-
 
 def main():
     pygame.init()
@@ -108,7 +106,6 @@ def main():
             )
 
     pygame.quit()
-
 
 if __name__ == "__main__":
     main()
